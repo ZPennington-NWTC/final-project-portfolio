@@ -162,3 +162,178 @@ section {
 .secondary-btn:hover {
     background-color: #2563eb;
 }
+
+/* -------------------------
+   PAGE BANNER
+------------------------- */
+
+.page-banner {
+    padding: 5rem 0 2rem;
+}
+
+.page-banner h1 {
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+
+/* -------------------------
+   CARDS / GRID
+------------------------- */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.content-card {
+    background-color: #1e293b;
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: 0.3s;
+}
+
+.content-card:hover {
+    transform: translateY(-5px);
+}
+
+.content-card h2,
+.content-card h3 {
+    margin: 1rem 0;
+}
+
+.placeholder-image {
+    height: 180px;
+    border-radius: 10px;
+    background-color: #334155;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #cbd5e1;
+    font-weight: bold;
+}
+
+/* -------------------------
+   CONTENT SECTIONS
+------------------------- */
+
+.content-section,
+.intro-section,
+.callout-section {
+    background-color: #1e293b;
+    padding: 3rem;
+    border-radius: 12px;
+}
+
+.text-content p {
+    margin-top: 1rem;
+}
+
+/* -------------------------
+   VIDEO GRID
+------------------------- */
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+/* -------------------------
+   FORM
+------------------------- */
+
+.form-section {
+    max-width: 800px;
+}
+
+fieldset {
+    border: 2px solid #334155;
+    border-radius: 12px;
+    padding: 2rem;
+}
+
+legend {
+    padding: 0 1rem;
+    font-weight: bold;
+    color: #60a5fa;
+}
+
+label {
+    display: block;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #0f172a;
+    color: #ffffff;
+}
+
+textarea {
+    min-height: 180px;
+    resize: vertical;
+}
+
+/* -------------------------
+   FOOTER
+------------------------- */
+
+.site-footer {
+    text-align: center;
+    padding: 2rem;
+    border-top: 1px solid #1e293b;
+    margin-top: 5rem;
+}
+
+/* -------------------------
+   RESPONSIVE
+------------------------- */
+
+@media (max-width: 900px) {
+
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .card-grid,
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .main-nav {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .hero-content h1,
+    .page-banner h1 {
+        font-size: 2.2rem;
+    }
+
+    .card-grid,
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .content-section,
+    .intro-section,
+    .callout-section {
+        padding: 2rem;
+    }
+
+}
