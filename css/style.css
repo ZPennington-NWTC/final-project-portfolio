@@ -409,19 +409,44 @@ textarea.error {
         width: 92%;
     }
 
-    .main-nav.show-nav {
-    display: block;
-        width: 100%;
-    }
-
-    .main-nav.show-nav ul {
-        flex-direction: column;
-        gap: 1rem;
-        margin-top: 1rem;
+    .nav-wrapper {
+        position: relative;
     }
 
     .menu-toggle {
         display: block;
+    }
+
+    .main-nav {
+        display: none;
+
+        position: absolute;
+        top: 100%;
+        right: 0;
+
+        width: 220px;
+
+        background-color: var(--bg-header);
+
+        border: 1px solid var(--border);
+        border-radius: 12px;
+
+        padding: 1rem;
+
+        box-shadow: var(--shadow);
+    }
+
+    .main-nav.show-nav {
+        display: block;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
     }
 
     .hero-content h1,
@@ -436,7 +461,8 @@ textarea.error {
 
     .content-section,
     .intro-section,
-    .callout-section {
+    .callout-section,
+    .form-section {
         padding: 2rem;
     }
 
