@@ -459,10 +459,42 @@ textarea.error {
         grid-template-columns: 1fr;
     }
 
+    .page-banner {
+    padding: 3rem 0 1rem;
+    }
+
+    section {
+        margin: 3rem 0;
+    }
+
+    .form-section {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    }
+
+    fieldset {
+        padding: 1.5rem;
+    }
+
+    legend {
+        font-size: 1rem;
+    }
+
+    input,
+    textarea {
+        font-size: 1rem;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+    }
+
     .content-section,
     .intro-section,
-    .callout-section,
-    .form-section {
+    .callout-section
+     {
         padding: 2rem;
     }
 
