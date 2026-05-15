@@ -301,6 +301,10 @@ section {
     color: var(--text-muted);
 }
 
+.game-list strong {
+    color: var(--accent-strong);
+}
+
 .card-image {
     width: 100%;
     height: 180px;
