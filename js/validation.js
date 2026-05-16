@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     $("#contact-form").validate({
         rules: {
             name: {
@@ -14,6 +15,7 @@ $(document).ready(function () {
                 minlength: 10
             }
         },
+
         messages: {
             name: {
                 required: "Please enter your name.",
@@ -28,9 +30,16 @@ $(document).ready(function () {
                 minlength: "Your message must be at least 10 characters."
             }
         },
-        submitHandler: function (form) {
+
+        submitHandler: function (form, event) {
+            event.preventDefault();
+
             alert("Thank you! This demo form has been validated successfully.");
+
             form.reset();
+
+            return false;
         }
     });
+
 });
