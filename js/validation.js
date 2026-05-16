@@ -27,6 +27,10 @@ $(document).ready(function () {
                 required: "Please enter a message.",
                 minlength: "Your message must be at least 10 characters."
             }
+        },
+        submitHandler: function (form) {
+            alert("Thank you! This demo form has been validated successfully.");
+            form.reset();
         }
     });
 });
