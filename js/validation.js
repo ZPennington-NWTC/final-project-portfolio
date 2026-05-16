@@ -31,13 +31,9 @@ $(document).ready(function () {
             }
         },
 
-        submitHandler: function (form, event) {
-            event.preventDefault();
-
+        submitHandler: function (form) {
             alert("Thank you! This demo form has been validated successfully.");
-
             form.reset();
-
             return false;
         }
     });
