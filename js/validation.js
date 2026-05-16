@@ -1,3 +1,5 @@
+alert("validation.js loaded");
+
 $(document).ready(function () {
 
     $("#contact-form").validate({
