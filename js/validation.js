@@ -1,43 +1,19 @@
-alert("validation.js loaded");
+document.addEventListener("DOMContentLoaded", function () {
 
-$(document).ready(function () {
+    const form = document.getElementById("contact-form");
 
-    $("#contact-form").validate({
-        rules: {
-            name: {
-                required: true,
-                minlength: 2
-            },
-            email: {
-                required: true,
-                email: true
-            },
-            message: {
-                required: true,
-                minlength: 10
-            }
-        },
+    if (form) {
 
-        messages: {
-            name: {
-                required: "Please enter your name.",
-                minlength: "Your name must be at least 2 characters."
-            },
-            email: {
-                required: "Please enter your email address.",
-                email: "Please enter a valid email address."
-            },
-            message: {
-                required: "Please enter a message.",
-                minlength: "Your message must be at least 10 characters."
-            }
-        },
+        form.addEventListener("submit", function (event) {
 
-        submitHandler: function (form) {
-            alert("Thank you! This demo form has been validated successfully.");
+            event.preventDefault();
+
+            alert("Thank you! This demo form has been submitted successfully.");
+
             form.reset();
-            return false;
-        }
-    });
+
+        });
+
+    }
 
 });
