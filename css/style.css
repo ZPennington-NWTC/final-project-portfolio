@@ -308,22 +308,6 @@ section {
         0 0 18px rgba(37, 99, 235, 0.35);
 }
 
-.stat-card {
-    background-color: var(--bg-surface);
-
-    border: 1px solid var(--border);
-
-    border-radius: var(--radius);
-
-    padding: 1rem;
-
-    text-align: center;
-
-    box-shadow:
-        0 8px 18px rgba(0, 0, 0, 0.22),
-        0 0 12px rgba(37, 99, 235, 0.18);
-}
-
 .content-card h2,
 .content-card h3 {
     color: var(--text-main);
